@@ -21,7 +21,7 @@
   <div id="selector-bottom"></div>
 </div>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-<script src="https://cdn.rawgit.com/Autarc/optimal-select/master/dist/optimal-select.min.js"></script>
+<script src="https://cdn.rawgit.com/imkimchi/cdn/fea6a868/finder.min.js"></script>
 <script>
 	var elements = {
     top: $('#selector-top'),
@@ -29,8 +29,6 @@
     right: $('#selector-right'),
     bottom: $('#selector-bottom')
 };
-const appURI = 'https://apps2.summercorp.kr'
-const scriptURI = 'https://raw.githubusercontent.com/imkimchi/injecthtml/master/inject_script.html'
 const isProductDetailPage = /\/product\/[a-zA-Z0-9_-]+\/\d+\/category\/\d+\/display\/\d+\//g.test(window.location.pathname)
 
 if (isProductDetailPage) {
