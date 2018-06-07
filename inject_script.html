@@ -66,22 +66,5 @@ if (isProductDetailPage) {
             height: (targetHeight + 7)
         });
     })
-
-    window.addEventListener('message', async e => {
-        if (e.data === 'admin' && e.origin === appURI) {
-            $.get(scriptURI, data => $('body').append(data))
-            document.addEventListener('click', e => {
-                const selector1 = OptimalSelect.select(e.target)
-                const selector2 = select(e.target)
-                console.log("selector", selector1, selector2)
-            /*
-                const isSave = confirm("이 엘리먼트로 지정하시겠습니까?")
-                if (isSave) {
-                    parent.postMessage(selector, "*")
-                }
-                */
-            })
-        }
-    })
 }
 </script>
